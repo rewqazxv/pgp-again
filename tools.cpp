@@ -4,12 +4,12 @@ namespace tools {
 
 // random
 
-bool _randinited = false;
-gmp_randclass _mprand{gmp_randinit_mt};
-std::mt19937_64 _randeng;
-std::uniform_int_distribution<Byte> _bytedist;
+static bool _randinited = false;
+static gmp_randclass _mprand{gmp_randinit_mt};
+static std::mt19937_64 _randeng;
+static std::uniform_int_distribution _bytedist(0, UINT8_MAX);
 
-void _initrand() {
+static void _initrand() {
     std::random_device rd;
     _mprand.seed(rd());
     _randeng.seed(rd());
@@ -18,7 +18,7 @@ void _initrand() {
 
 Byte randbyte() {
     if (!_randinited) _initrand();
-    return _bytedist(_randeng);
+    return Byte(_bytedist(_randeng));
 }
 
 gmp_randclass &getgmprand() {
@@ -28,7 +28,7 @@ gmp_randclass &getgmprand() {
 
 // int io
 
-Byte ctoi(char c) {
+static Byte ctoi(char c) {
     if (c >= '0' && c <= '9') return c - '0';
     else if (c >= 'a' && c <= 'f') return c - 'a' + 10;
     else if (c >= 'A' && c <= 'F') return c - 'A' + 10;
