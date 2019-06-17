@@ -7,7 +7,7 @@ namespace tools {
 static bool _randinited = false;
 static gmp_randclass _mprand{gmp_randinit_mt};
 static std::mt19937_64 _randeng;
-static std::uniform_int_distribution _bytedist(0, UINT8_MAX);
+static std::uniform_int_distribution<int> _bytedist(0, UINT8_MAX);
 
 static void _initrand() {
     std::random_device rd;
