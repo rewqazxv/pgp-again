@@ -1,5 +1,5 @@
-#ifndef CAST_H
-#define CAST_H
+#ifndef TOOLS_H
+#define TOOLS_H
 
 #include "pch.hpp"
 
@@ -37,4 +37,4 @@ size_t writempz(Byte *buf, size_t maxlen, mpz_class n);
 
 }
 
-#endif // CAST_H
+#endif // TOOLS_H
