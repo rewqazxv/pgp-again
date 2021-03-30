@@ -1,11 +1,11 @@
 test: test.cpp aes.o rsa.o
 	g++ -o test -lgmpxx -lgmp test.cpp aes.o rsa.o
 
-aes.o: ../encrypt/aes.c ../encrypt/aes.h
-	gcc -c ../encrypt/aes.c
+aes.o: ../src/encrypt/aes.c ../src/encrypt/aes.h
+	gcc -c ../src/encrypt/aes.c
 
-rsa.o: ../encrypt/rsa.cpp ../encrypt/rsa.hpp
-	g++ -c ../encrypt/rsa.cpp
+rsa.o: ../src/encrypt/rsa.cpp ../src/encrypt/rsa.hpp
+	g++ -c ../src/encrypt/rsa.cpp
 
 run: test
 	./test

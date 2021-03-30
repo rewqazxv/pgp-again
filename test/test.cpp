@@ -5,9 +5,9 @@
 #include <string.h>
 using namespace std;
 
-#include "../encrypt/rsa.hpp"
+#include "../src/encrypt/rsa.hpp"
 extern "C" {
-#include "../encrypt/aes.h"
+#include "../src/encrypt/aes.h"
 }
 
 Byte randbyte() {

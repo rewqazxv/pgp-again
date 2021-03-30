@@ -33,7 +33,7 @@
 #include <QMessageBox>
 #include <QPainter>
 #include <QProcess>
-#include <QRegExpValidator>
+#include <QRegularExpressionValidator>
 #include <QStatusBar>
 #include <QSystemTrayIcon>
 #include <QTableWidget>
