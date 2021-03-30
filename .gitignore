@@ -1,23 +1,20 @@
-# C++ objects and libs
-
+# C/C++ compiled
 *.slo
 *.lo
 *.o
+*.obj
 *.a
 *.la
 *.lai
 *.so
+*.so.*
 *.dll
 *.dylib
+*.exe
 
 # Qt-es
-
 /.qmake.cache
 /.qmake.stash
-*.pro.user
-*.pro.user.*
-*.qbs.user
-*.qbs.user.*
 *.moc
 moc_*.cpp
 qrc_*.cpp
@@ -26,20 +23,26 @@ Makefile*
 *build-*
 
 # QtCreator
-
 *.autosave
-
-# QtCtreator Qml
-*.qmlproject.user
-*.qmlproject.user.*
-
-# QtCtreator CMake
+*.pro.user*
 CMakeLists.txt.user*
 
-# folders
+# temporary files
+*~
+.*.swp
+*.orig
+*.rej
+*.core
+.#*
+*.*#
+.DS_Store
+Thumbs.db
 
-debug/
-release/
+# Python byte code
+*.pyc
+
+# folders
+build/
 
 # custom
 test/*.o
