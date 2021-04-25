@@ -43,7 +43,3 @@ Thumbs.db
 
 # folders
 build/
-
-# custom
-test/*.o
-test/test
