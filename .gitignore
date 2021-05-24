@@ -41,5 +41,9 @@ Thumbs.db
 # Python byte code
 *.pyc
 
-# folders
+# build
 build/
+
+# ide
+.vscode/
+.idea/

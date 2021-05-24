@@ -3,6 +3,6 @@
         <file alias="icon">../icon.png</file>
     </qresource>
     <qresource prefix="/translations">
-        <file alias="zh_CN">translations/zh_CN.qm</file>
+        <file alias="zh_CN">lang/zh_CN.qm</file>
     </qresource>
 </RCC>

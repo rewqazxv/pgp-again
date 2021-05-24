@@ -1,5 +1,5 @@
-#include "pch.hpp"
-#include "ui/mainwindow.h"
+#include "ui/main-window.h"
+
 
 int main(int argc, char *argv[])
 {

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">PGP Again</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../res.qrc">
+    <normaloff>:/icon/icon</normaloff>:/icon/icon</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_10">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_Encrypt">
+       <attribute name="title">
+        <string>Encrypt</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_EncryptFileArea">
+          <item row="0" column="2">
+           <widget class="QToolButton" name="toolButton_EncryptInput">
+            <property name="text">
+             <string notr="true">...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_EncryptOutput">
+            <property name="text">
+             <string>Output File</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_EncryptInput"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_EncryptInput">
+            <property name="text">
+             <string>Input File</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QToolButton" name="toolButton_EncryptOutput">
+            <property name="text">
+             <string notr="true">...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_EncryptOutput"/>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QComboBox" name="comboBox_EncryptMethod">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <item>
+             <property name="text">
+              <string notr="true">AES_128_CBC</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_EncryptMethod">
+            <property name="text">
+             <string>Method</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_EncryptButtonArea">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_Encrypt">
+            <property name="text">
+             <string>Encrypt</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_EncryptInfo">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_Decrypt">
+       <attribute name="title">
+        <string>Decrypt</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_DecryptFileArea">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_DecryptInput">
+            <property name="text">
+             <string>Input File</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_DecryptInput"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_DecryptOutput">
+            <property name="text">
+             <string>Output File</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_DecryptOutput"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="QToolButton" name="toolButton_DecryptInput">
+            <property name="text">
+             <string notr="true">...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QToolButton" name="toolButton_DecryptOutput">
+            <property name="text">
+             <string notr="true">...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_DecryptButtonArea">
+          <item>
+           <spacer name="horizontalSpacer_DecryptButtonArea">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_Decrypt">
+            <property name="text">
+             <string>Decrypt</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_DecryptInfo">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_PublicKey">
+   <property name="windowTitle">
+    <string>Public Keys</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_PublicKey">
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QListView" name="listView_PublicKey">
+       <property name="contextMenuPolicy">
+        <enum>Qt::ActionsContextMenu</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_PrivateKey">
+   <property name="windowTitle">
+    <string>Private Keys</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_PrivateKey">
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <item>
+      <widget class="QListView" name="listView_PrivateKey">
+       <property name="contextMenuPolicy">
+        <enum>Qt::ActionsContextMenu</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAboutQt"/>
+   </widget>
+   <widget class="QMenu" name="menuKeys">
+    <property name="title">
+     <string>Keys</string>
+    </property>
+    <addaction name="actionImportPublicKey"/>
+    <addaction name="actionImportPrivateKey"/>
+    <addaction name="separator"/>
+    <addaction name="actionDeleteSelectedPublicKey"/>
+    <addaction name="actionDeleteSelectedPrivateKey"/>
+    <addaction name="separator"/>
+    <addaction name="actionGenerateKeyPair"/>
+   </widget>
+   <addaction name="menuKeys"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAboutQt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionGenerateKeyPair">
+   <property name="text">
+    <string>Generate Key Pair</string>
+   </property>
+  </action>
+  <action name="actionImportPublicKey">
+   <property name="text">
+    <string>Import Public Key</string>
+   </property>
+  </action>
+  <action name="actionImportPrivateKey">
+   <property name="text">
+    <string>Import Private Key</string>
+   </property>
+  </action>
+  <action name="actionDeleteSelectedPublicKey">
+   <property name="text">
+    <string>Delete Selected Public Key</string>
+   </property>
+  </action>
+  <action name="actionDeleteSelectedPrivateKey">
+   <property name="text">
+    <string>Delete Selected Private Key</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
