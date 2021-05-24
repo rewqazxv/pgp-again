@@ -149,7 +149,7 @@
     </message>
     <message>
         <location filename="../ui/main-window.ui" line="324"/>
-        <location filename="../ui/main-window.cpp" line="60"/>
+        <location filename="../ui/main-window.cpp" line="59"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
@@ -184,43 +184,43 @@
         <translation>删除选中的私钥</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="58"/>
+        <location filename="../ui/main-window.cpp" line="57"/>
         <source>&lt;h1&gt;PGP-Again&lt;/h1&gt;&lt;p&gt;An asymmetric encryption tool that reinvented PGP.&lt;/p&gt;</source>
         <translation>&lt;h1&gt;PGP-Again&lt;/h1&gt;&lt;p&gt;非对称文件加密工具，重新发明了PGP。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="91"/>
-        <location filename="../ui/main-window.cpp" line="102"/>
+        <location filename="../ui/main-window.cpp" line="90"/>
+        <location filename="../ui/main-window.cpp" line="101"/>
         <source>Remove confirm</source>
         <translation>删除确认</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="92"/>
+        <location filename="../ui/main-window.cpp" line="91"/>
         <source>Are you sure to delete public key of &apos;%1&apos;?</source>
         <translation>确定要删除公钥 &apos;%1&apos; 吗？</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="103"/>
+        <location filename="../ui/main-window.cpp" line="102"/>
         <source>Are you sure to delete private key of &apos;%1&apos;?</source>
         <translation>确定要删除私钥 &apos;%1&apos; 吗？</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="149"/>
+        <location filename="../ui/main-window.cpp" line="148"/>
         <source>&lt;p&gt;&lt;b&gt;Input File:&lt;/b&gt; %1&lt;/p&gt;&lt;p&gt;&lt;b&gt;Output File:&lt;/b&gt; %2&lt;/p&gt;&lt;p&gt;&lt;b&gt;Encrypt Method:&lt;/b&gt; %3 + %4&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;输入文件：&lt;/b&gt;%1&lt;/p&gt;&lt;p&gt;&lt;b&gt;输出文件：&lt;/b&gt;%2&lt;/p&gt;&lt;p&gt;&lt;b&gt;加密方法：&lt;/b&gt;%3 + %4&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="153"/>
+        <location filename="../ui/main-window.cpp" line="152"/>
         <source>PGP Encryption</source>
         <translation>PGP 加密</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="169"/>
+        <location filename="../ui/main-window.cpp" line="168"/>
         <source>&lt;p&gt;&lt;b&gt;Input File:&lt;/b&gt; %1&lt;/p&gt;&lt;p&gt;&lt;b&gt;Output File:&lt;/b&gt; %2&lt;/p&gt;&lt;p&gt;&lt;b&gt;Private Key Algorithm:&lt;/b&gt; %3&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;输入文件：&lt;/b&gt;%1&lt;/p&gt;&lt;p&gt;&lt;b&gt;输出文件：&lt;/b&gt;%2&lt;/p&gt;&lt;p&gt;&lt;b&gt;私钥算法：&lt;/b&gt;%3&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="173"/>
+        <location filename="../ui/main-window.cpp" line="172"/>
         <source>PGP Decryption</source>
         <translation>PGP 解密</translation>
     </message>
@@ -250,20 +250,20 @@
         <translation>公钥指数</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="201"/>
-        <location filename="../ui/main-window.cpp" line="237"/>
+        <location filename="../ui/main-window.cpp" line="200"/>
+        <location filename="../ui/main-window.cpp" line="236"/>
         <source>Input File Name</source>
         <translation>输入文件名</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="202"/>
-        <location filename="../ui/main-window.cpp" line="238"/>
+        <location filename="../ui/main-window.cpp" line="201"/>
+        <location filename="../ui/main-window.cpp" line="237"/>
         <source>Input File Size</source>
         <translation>输入文件大小</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="209"/>
-        <location filename="../ui/main-window.cpp" line="245"/>
+        <location filename="../ui/main-window.cpp" line="208"/>
+        <location filename="../ui/main-window.cpp" line="244"/>
         <source>&lt;p&gt;&lt;b&gt;%1:&lt;/b&gt; %2&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;%1：&lt;/b&gt;%2&lt;/p&gt;</translation>
     </message>

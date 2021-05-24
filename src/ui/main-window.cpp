@@ -181,28 +181,28 @@ void MainWindow::pre_encrypt_info()
     QList<QPair<QString, QString>> kv_pairs;
 
     if (ui->listView_PublicKey->selectionModel()->hasSelection()) {
+        kv_pairs.push_back(qMakePair(QString(), QString())); // splitter
         auto row = ui->listView_PublicKey->selectionModel()->selection().indexes().at(0);
         const KeyInfo &key = public_keys_model.getAt(row);
-        kv_pairs.push_back(QPair(tr("Public Key Comment"), key.comment));
-        kv_pairs.push_back(QPair(tr("Public Key Algorithm"), KeyInfo::ALGO_STR[key.algo]));
+        kv_pairs.push_back(qMakePair(tr("Public Key Comment"), key.comment));
+        kv_pairs.push_back(qMakePair(tr("Public Key Algorithm"), KeyInfo::ALGO_STR[key.algo]));
         if (key.algo == KeyInfo::Algorithm::RSA) {
             const crypto::rsa::Key &rsa_key = key.getRsaKeyData();
-            kv_pairs.push_back(QPair(tr("Public Key length"), QString::number(crypto::bigint::size(rsa_key.mod))));
-            kv_pairs.push_back(QPair(tr("Public Key Mod"), QString("0x%1...").arg(QString::fromStdString(rsa_key.mod.get_str(16)).left(20))));
-            kv_pairs.push_back(QPair(tr("Public Key Exp"), QString::fromStdString(rsa_key.exp.get_str(10))));
+            kv_pairs.push_back(qMakePair(tr("Public Key length"), QString::number(crypto::bigint::size(rsa_key.mod))));
+            kv_pairs.push_back(qMakePair(tr("Public Key Mod"), QString("0x%1...").arg(QString::fromStdString(rsa_key.mod.get_str(16)).left(20))));
+            kv_pairs.push_back(qMakePair(tr("Public Key Exp"), QString::fromStdString(rsa_key.exp.get_str(10))));
         }
     }
 
     QFileInfo f(ui->lineEdit_EncryptInput->text());
     if (f.isFile()) {
-        if (!kv_pairs.isEmpty())
-            kv_pairs.push_back(QPair(QString(), QString())); // splitter
-        kv_pairs.push_back(QPair(tr("Input File Name"), f.fileName()));
-        kv_pairs.push_back(QPair(tr("Input File Size"), QString::number(f.size())));
+        kv_pairs.push_back(qMakePair(QString(), QString())); // splitter
+        kv_pairs.push_back(qMakePair(tr("Input File Name"), f.fileName()));
+        kv_pairs.push_back(qMakePair(tr("Input File Size"), QString::number(f.size())));
     }
 
     // join
-    QString res("<hr>");
+    QString res;
     for (const auto &i : kv_pairs) {
         if (!i.first.isEmpty() && !i.second.isEmpty())
             res.append(tr("<p><b>%1:</b> %2</p>").arg(i.first, i.second));
@@ -218,27 +218,27 @@ void MainWindow::pre_decrypt_info()
     QList<QPair<QString, QString>> kv_pairs;
 
     if (ui->listView_PrivateKey->selectionModel()->hasSelection()) {
+        kv_pairs.push_back(qMakePair(QString(), QString())); // splitter
         auto row = ui->listView_PrivateKey->selectionModel()->selection().indexes().at(0);
         const KeyInfo &key = private_keys_model.getAt(row);
-        kv_pairs.push_back(QPair(tr("Private Key Comment"), key.comment));
-        kv_pairs.push_back(QPair(tr("Private Key Algorithm"), KeyInfo::ALGO_STR[key.algo]));
+        kv_pairs.push_back(qMakePair(tr("Private Key Comment"), key.comment));
+        kv_pairs.push_back(qMakePair(tr("Private Key Algorithm"), KeyInfo::ALGO_STR[key.algo]));
         if (key.algo == KeyInfo::Algorithm::RSA) {
             const crypto::rsa::Key &rsa_key = key.getRsaKeyData();
-            kv_pairs.push_back(QPair(tr("Private Key length"), QString::number(crypto::bigint::size(rsa_key.mod))));
-            kv_pairs.push_back(QPair(tr("Private Key Mod"), QString("0x%1...").arg(QString::fromStdString(rsa_key.mod.get_str(16)).left(20))));
+            kv_pairs.push_back(qMakePair(tr("Private Key length"), QString::number(crypto::bigint::size(rsa_key.mod))));
+            kv_pairs.push_back(qMakePair(tr("Private Key Mod"), QString("0x%1...").arg(QString::fromStdString(rsa_key.mod.get_str(16)).left(20))));
         }
     }
 
     QFileInfo f(ui->lineEdit_DecryptInput->text());
     if (f.isFile()) {
-        if (!kv_pairs.isEmpty())
-            kv_pairs.push_back(QPair(QString(), QString())); // splitter
-        kv_pairs.push_back(QPair(tr("Input File Name"), f.fileName()));
-        kv_pairs.push_back(QPair(tr("Input File Size"), QString::number(f.size())));
+        kv_pairs.push_back(qMakePair(QString(), QString())); // splitter
+        kv_pairs.push_back(qMakePair(tr("Input File Name"), f.fileName()));
+        kv_pairs.push_back(qMakePair(tr("Input File Size"), QString::number(f.size())));
     }
 
     // join
-    QString res("<hr>");
+    QString res;
     for (const auto &i : kv_pairs) {
         if (!i.first.isEmpty() && !i.second.isEmpty())
             res.append(tr("<p><b>%1:</b> %2</p>").arg(i.first, i.second));
