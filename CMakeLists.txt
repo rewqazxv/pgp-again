@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.5)
 
 project(pgp-again LANGUAGES CXX)
 
+if(EXISTS ${CMAKE_CURRENT_LIST_DIR}/conanbuildinfo.cmake)
+    include(conanbuildinfo.cmake)
+    conan_basic_setup()
+endif()
+
 add_subdirectory(lib/cpp-crypto)
 
 set(CMAKE_CXX_STANDARD 17)

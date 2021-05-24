@@ -47,3 +47,10 @@ build/
 # ide
 .vscode/
 .idea/
+
+# conan
+conan.lock
+conanbuildinfo.cmake
+conanbuildinfo.txt
+conaninfo.txt
+graph_info.json
