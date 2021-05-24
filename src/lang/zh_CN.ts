@@ -10,13 +10,13 @@
     </message>
     <message>
         <location filename="../ui/generate-key-pair-dialog.ui" line="24"/>
-        <location filename="../ui/generate-key-pair-dialog.ui" line="80"/>
+        <location filename="../ui/generate-key-pair-dialog.ui" line="87"/>
         <source>Import</source>
         <translation>导入</translation>
     </message>
     <message>
         <location filename="../ui/generate-key-pair-dialog.ui" line="31"/>
-        <location filename="../ui/generate-key-pair-dialog.ui" line="87"/>
+        <location filename="../ui/generate-key-pair-dialog.ui" line="94"/>
         <source>Save to File</source>
         <translation>保存到文件</translation>
     </message>
@@ -26,7 +26,7 @@
         <translation>公钥</translation>
     </message>
     <message>
-        <location filename="../ui/generate-key-pair-dialog.ui" line="71"/>
+        <location filename="../ui/generate-key-pair-dialog.ui" line="78"/>
         <source>Private Key</source>
         <translation>私钥</translation>
     </message>
@@ -36,19 +36,19 @@
         <translation>注释</translation>
     </message>
     <message>
-        <location filename="../ui/generate-key-pair-dialog.ui" line="152"/>
+        <location filename="../ui/generate-key-pair-dialog.ui" line="157"/>
         <source>Generate</source>
         <translation>生成</translation>
     </message>
     <message>
-        <location filename="../ui/generate-key-pair-dialog.cpp" line="87"/>
-        <location filename="../ui/generate-key-pair-dialog.cpp" line="113"/>
+        <location filename="../ui/generate-key-pair-dialog.cpp" line="92"/>
+        <location filename="../ui/generate-key-pair-dialog.cpp" line="118"/>
         <source>File Save Failed</source>
         <translation>文件保存失败</translation>
     </message>
     <message>
-        <location filename="../ui/generate-key-pair-dialog.cpp" line="88"/>
-        <location filename="../ui/generate-key-pair-dialog.cpp" line="114"/>
+        <location filename="../ui/generate-key-pair-dialog.cpp" line="93"/>
+        <location filename="../ui/generate-key-pair-dialog.cpp" line="119"/>
         <source>Can not save to file &apos;%1&apos;.</source>
         <translation>不能保存到文件 &apos;%1&apos;。</translation>
     </message>
@@ -106,123 +106,186 @@
     </message>
     <message>
         <location filename="../ui/main-window.ui" line="44"/>
-        <location filename="../ui/main-window.ui" line="151"/>
+        <location filename="../ui/main-window.ui" line="169"/>
         <source>Output File</source>
         <translation>输出文件</translation>
     </message>
     <message>
         <location filename="../ui/main-window.ui" line="54"/>
-        <location filename="../ui/main-window.ui" line="141"/>
+        <location filename="../ui/main-window.ui" line="159"/>
         <source>Input File</source>
         <translation>输入文件</translation>
     </message>
     <message>
         <location filename="../ui/main-window.ui" line="86"/>
         <source>Method</source>
-        <translation>对称加密算法</translation>
+        <translation>对称加密</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="133"/>
-        <location filename="../ui/main-window.ui" line="192"/>
+        <location filename="../ui/main-window.ui" line="151"/>
+        <location filename="../ui/main-window.ui" line="210"/>
         <source>Decrypt</source>
         <translation>解密</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="219"/>
+        <location filename="../ui/main-window.ui" line="255"/>
         <source>Public Keys</source>
         <translation>公钥</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="238"/>
+        <location filename="../ui/main-window.ui" line="274"/>
         <source>Private Keys</source>
         <translation>私钥</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="266"/>
+        <location filename="../ui/main-window.ui" line="302"/>
         <source>Help</source>
         <translation>帮助</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="273"/>
+        <location filename="../ui/main-window.ui" line="309"/>
         <source>Keys</source>
         <translation>密钥</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="288"/>
-        <location filename="../ui/main-window.cpp" line="50"/>
+        <location filename="../ui/main-window.ui" line="324"/>
+        <location filename="../ui/main-window.cpp" line="60"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="293"/>
+        <location filename="../ui/main-window.ui" line="329"/>
         <source>About Qt</source>
         <translation>关于 Qt</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="298"/>
+        <location filename="../ui/main-window.ui" line="334"/>
         <source>Generate Key Pair</source>
         <translation>生成密钥对</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="303"/>
+        <location filename="../ui/main-window.ui" line="339"/>
         <source>Import Public Key</source>
         <translation>导入公钥</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="308"/>
+        <location filename="../ui/main-window.ui" line="344"/>
         <source>Import Private Key</source>
         <translation>导入私钥</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="313"/>
+        <location filename="../ui/main-window.ui" line="349"/>
         <source>Delete Selected Public Key</source>
         <translation>删除选中的公钥</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.ui" line="318"/>
+        <location filename="../ui/main-window.ui" line="354"/>
         <source>Delete Selected Private Key</source>
         <translation>删除选中的私钥</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="48"/>
+        <location filename="../ui/main-window.cpp" line="58"/>
         <source>&lt;h1&gt;PGP-Again&lt;/h1&gt;&lt;p&gt;An asymmetric encryption tool that reinvented PGP.&lt;/p&gt;</source>
         <translation>&lt;h1&gt;PGP-Again&lt;/h1&gt;&lt;p&gt;非对称文件加密工具，重新发明了PGP。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="81"/>
-        <location filename="../ui/main-window.cpp" line="92"/>
+        <location filename="../ui/main-window.cpp" line="91"/>
+        <location filename="../ui/main-window.cpp" line="102"/>
         <source>Remove confirm</source>
         <translation>删除确认</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="82"/>
+        <location filename="../ui/main-window.cpp" line="92"/>
         <source>Are you sure to delete public key of &apos;%1&apos;?</source>
         <translation>确定要删除公钥 &apos;%1&apos; 吗？</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="93"/>
+        <location filename="../ui/main-window.cpp" line="103"/>
         <source>Are you sure to delete private key of &apos;%1&apos;?</source>
         <translation>确定要删除私钥 &apos;%1&apos; 吗？</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="139"/>
+        <location filename="../ui/main-window.cpp" line="149"/>
         <source>&lt;p&gt;&lt;b&gt;Input File:&lt;/b&gt; %1&lt;/p&gt;&lt;p&gt;&lt;b&gt;Output File:&lt;/b&gt; %2&lt;/p&gt;&lt;p&gt;&lt;b&gt;Encrypt Method:&lt;/b&gt; %3 + %4&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;输入文件：&lt;/b&gt;%1&lt;/p&gt;&lt;p&gt;&lt;b&gt;输出文件：&lt;/b&gt;%2&lt;/p&gt;&lt;p&gt;&lt;b&gt;加密方法：&lt;/b&gt;%3 + %4&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="143"/>
+        <location filename="../ui/main-window.cpp" line="153"/>
         <source>PGP Encryption</source>
         <translation>PGP 加密</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="159"/>
+        <location filename="../ui/main-window.cpp" line="169"/>
         <source>&lt;p&gt;&lt;b&gt;Input File:&lt;/b&gt; %1&lt;/p&gt;&lt;p&gt;&lt;b&gt;Output File:&lt;/b&gt; %2&lt;/p&gt;&lt;p&gt;&lt;b&gt;Private Key Algorithm:&lt;/b&gt; %3&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;输入文件：&lt;/b&gt;%1&lt;/p&gt;&lt;p&gt;&lt;b&gt;输出文件：&lt;/b&gt;%2&lt;/p&gt;&lt;p&gt;&lt;b&gt;私钥算法：&lt;/b&gt;%3&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../ui/main-window.cpp" line="163"/>
+        <location filename="../ui/main-window.cpp" line="173"/>
         <source>PGP Decryption</source>
         <translation>PGP 解密</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="187"/>
+        <source>Public Key Comment</source>
+        <translation>公钥注释</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="188"/>
+        <source>Public Key Algorithm</source>
+        <translation>公钥算法</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="191"/>
+        <source>Public Key length</source>
+        <translation>公钥长度</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="192"/>
+        <source>Public Key Mod</source>
+        <translation>公钥模数</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="193"/>
+        <source>Public Key Exp</source>
+        <translation>公钥指数</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="201"/>
+        <location filename="../ui/main-window.cpp" line="237"/>
+        <source>Input File Name</source>
+        <translation>输入文件名</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="202"/>
+        <location filename="../ui/main-window.cpp" line="238"/>
+        <source>Input File Size</source>
+        <translation>输入文件大小</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="209"/>
+        <location filename="../ui/main-window.cpp" line="245"/>
+        <source>&lt;p&gt;&lt;b&gt;%1:&lt;/b&gt; %2&lt;/p&gt;</source>
+        <translation>&lt;p&gt;&lt;b&gt;%1：&lt;/b&gt;%2&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="224"/>
+        <source>Private Key Comment</source>
+        <translation>私钥注释</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="225"/>
+        <source>Private Key Algorithm</source>
+        <translation>私钥算法</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="228"/>
+        <source>Private Key length</source>
+        <translation>私钥长度</translation>
+    </message>
+    <message>
+        <location filename="../ui/main-window.cpp" line="229"/>
+        <source>Private Key Mod</source>
+        <translation>私钥模数</translation>
     </message>
     <message>
         <source>Encrypting</source>

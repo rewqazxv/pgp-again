@@ -39,6 +39,8 @@ private slots:
     void on_pushButton_Decrypt_clicked();
 
     void check_status();
+    void pre_encrypt_info();
+    void pre_decrypt_info();
 };
 
 #endif //MAIN_WINDOW_H
