@@ -10,6 +10,7 @@
 #include <utility>
 #include <variant>
 #include <regex>
+#include <optional>
 
 // qt
 #include <QAbstractItemModel>
