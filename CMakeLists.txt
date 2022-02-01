@@ -55,3 +55,6 @@ PRIVATE
     Qt::Widgets
     crypto
 )
+if(WIN32)
+    set_target_properties(pgp-again PROPERTIES WIN32_EXECUTABLE true)
+endif()
