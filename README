@@ -1,0 +1,6 @@
+PGP demo
+
+build:
+    conan install .     # windows
+    cmake -S . -B build -D QT_VERSION=6
+    cmake --build build --config Release --target pgp-again
